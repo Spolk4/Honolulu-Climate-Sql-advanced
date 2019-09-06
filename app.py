@@ -142,5 +142,6 @@ def all_temps(start = None, end= None):
         # Unravel results into a 1D array and convert to a list
         temps = list(np.ravel(results))
         return jsonify(temps)
-        
+
 if __name__=="__main__":
+    app.run(debug=True)
